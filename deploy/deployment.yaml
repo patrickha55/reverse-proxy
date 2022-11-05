@@ -7,6 +7,9 @@ metadata:
 spec:
   replicas: 1
   template:
+    selector:
+      matchLabels:
+        service: reverseproxy
     metadata:
       labels:
         service: reverseproxy
